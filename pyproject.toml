@@ -18,6 +18,8 @@ taskipy = "^1.10.4"
 pyautogui = "^0.9.53"
 opencv-python = "^4.7.0.72"
 pillow = "^9.5.0"
+pytest-mock = "^3.10.0"
+keyboard = "^0.13.5"
 
 
 [tool.poetry.group.doc.dependencies]
@@ -42,5 +44,5 @@ lint = "blue --check --diff . && isort --check --diff ."
 lint_force = "blue . && isort ."
 docs = "mkdocs serve"
 pre_test = "task lint"
-test = "pytest -s -x --cov=botlib -vv"
+test = "pytest -s -x --cov=actions -vv"
 post_test = "coverage html"
